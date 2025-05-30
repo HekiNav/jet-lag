@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import InvestigationNav from '../../components/investigationNav';
-import uploadPlaceholder from '/static/img/default-placeholder.png';
+import uploadPlaceholder from '/static/jet-lag/img/default-placeholder.png';
 
 const allPrompts: Record<string, string[]> = {
 	'All Games': [

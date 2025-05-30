@@ -140,11 +140,11 @@ export default function YourDeckPage() {
 
 		// Go through every card
 		for (const { file } of cardDefinitions) {
-			images.add(`/img/cards/${file}.png`);
+			images.add(`/jet-lag/img/cards/${file}.png`);
 		}
 
 		// Add the card back too
-		images.add('/img/cards/card_back.png');
+		images.add('/jet-lag/img/cards/card_back.png');
 
 		// Preload each image
 		images.forEach((src) => {
@@ -284,7 +284,7 @@ export default function YourDeckPage() {
 					{hand.map((card, i) => (
 						<img
 							key={i}
-							src={`/img/cards/${card.file}.png`}
+							src={`/jet-lag/img/cards/${card.file}.png`}
 							alt={card.id}
 							style={{
 								width: 100 * 1.25,
@@ -305,7 +305,7 @@ export default function YourDeckPage() {
 					{Array.from({ length: handSize - hand.length }).map((_, i) => (
 						<img
 							key={i}
-							src='/img/cards/card_back.png'
+							src='/jet-lag/img/cards/card_back.png'
 							alt='Card back'
 							style={{
 								width: 100 * 1.25,
